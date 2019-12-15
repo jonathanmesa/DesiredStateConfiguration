@@ -22,6 +22,7 @@ configuration CreatePullServer
 
     Import-DSCResource -ModuleName PSDesiredStateConfiguration
     # Update the module version appropriately
+    # see all avalible veresions  : Get-Module -ListAvailable -FullyQualifiedName  'xPSDesiredStateConfiguration'
     Import-DSCResource -ModuleName xPSDesiredStateConfiguration -ModuleVersion 3.9.0.0
 
     Node $ComputerName
